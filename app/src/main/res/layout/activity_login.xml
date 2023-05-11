@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#783B3B"
+    tools:context=".LoginActivity">
+
+    <EditText
+        android:id="@+id/lemailaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:ems="10"
+        android:hint="Enter your email address"
+        android:inputType="textEmailAddress"
+        android:textColor="#F8EEEE"
+        android:textColorHint="#F8EEEE" />
+
+    <EditText
+        android:id="@+id/lpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="350dp"
+        android:ems="10"
+        android:hint="Enter your password"
+        android:inputType="textPassword"
+        android:textColor="#F8EEEE"
+        android:textColorHint="#F8EEEE" />
+
+    <Button
+        android:id="@+id/llogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="450dp"
+        android:backgroundTint="#60A587"
+        android:text="Log in"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#100101"
+        app:iconTint="#E91E63" />
+
+    <Button
+        android:layout_marginTop="550dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/lcreate_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#60A587"
+        android:text="Create Account"
+        android:textColor="#100101" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_width="150dp"
+        android:layout_height="160dp"
+        app:srcCompat="@drawable/logo" />
+</RelativeLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "637882849791",
+    "project_id": "zeal-ticketing",
+    "storage_bucket": "zeal-ticketing.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:637882849791:android:714edb53a154fc0c10afca",
+        "android_client_info": {
+          "package_name": "com.example.zeal_ticketing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "637882849791-10dr77a4iuqqs590hkmtsa8edr96ll6c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBM2HHvzTCj8AsmTAkn_rB-W9_SUTtpcXk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "637882849791-10dr77a4iuqqs590hkmtsa8edr96ll6c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

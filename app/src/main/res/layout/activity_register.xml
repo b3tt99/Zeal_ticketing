@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#783B3B"
+    tools:context=".RegisterActivity">
+
+    <EditText
+        android:id="@+id/Rname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:hint="Enter your name"
+        android:inputType="text"
+        android:textColor="#F8EEEE"
+        android:textColorHint="#F8EEEE" />
+
+    <EditText
+        android:id="@+id/Remail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:ems="10"
+        android:hint="Enter your email"
+        android:inputType="textEmailAddress"
+        android:textColor="#F8EEEE"
+        android:textColorHint="#F8EEEE" />
+
+    <EditText
+        android:id="@+id/Rphone_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:ems="10"
+        android:hint="Enter your phone number"
+        android:inputType="phone"
+        android:textColor="#F8EEEE"
+        android:textColorHint="#F8EEEE" />
+
+    <EditText
+        android:id="@+id/Rpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="400dp"
+        android:ems="10"
+        android:hint="Enter your password"
+        android:inputType="textPassword"
+        android:textColor="#F8EEEE"
+        android:textColorHint="#F8EEEE" />
+
+    <Button
+        android:id="@+id/Rcreate_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="500dp"
+        android:backgroundTint="#60A587"
+        android:text="Create Account"
+        android:textColor="#100101" />
+
+</RelativeLayout>
