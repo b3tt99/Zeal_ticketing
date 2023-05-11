@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="250dp"
         android:ems="10"
         android:hint="Enter your name"
         android:inputType="text"
@@ -24,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="350dp"
         android:ems="10"
         android:hint="Enter your email"
         android:inputType="textEmailAddress"
@@ -36,7 +36,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="450dp"
         android:ems="10"
         android:hint="Enter your phone number"
         android:inputType="phone"
@@ -48,7 +48,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="400dp"
+        android:layout_marginTop="550dp"
         android:ems="10"
         android:hint="Enter your password"
         android:inputType="textPassword"
@@ -60,9 +60,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="500dp"
+        android:layout_marginTop="650dp"
         android:backgroundTint="#60A587"
         android:text="Create Account"
         android:textColor="#100101" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="220dp"
+        app:srcCompat="@drawable/logo" />
 
 </RelativeLayout>
