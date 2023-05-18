@@ -1,6 +1,8 @@
 package com.example.zeal_ticketing
 
+import android.app.Activity
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
@@ -10,57 +12,25 @@ import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var list_events:ListView
+    lateinit var list_events: ListView
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        list_events=findViewById(R.id.list_events)
+        list_events = findViewById(R.id.list_events)
 
         // Set up click listeners for the Buy Tickets and Sell Tickets buttons
         val btnBuyTickets = findViewById<Button>(R.id.btn_buy_tickets)
         val btnSellTickets = findViewById<Button>(R.id.btn_sell_tickets)
         btnBuyTickets.setOnClickListener {
-            // TODO: Implement logic for buying tickets
-
-                // Get the selected event from the list view
-                val selectedItem = list_events.selectedItem as? String
-                if (selectedItem == null) {
-                    Toast.makeText(this, "Please select an event to buy tickets for", Toast.LENGTH_SHORT).show()
-                    return@setOnClickListener
-                }
-
-                // TODO: Implement logic for buying tickets for the selected event
-
-
-
-
-
-
-                Toast.makeText(this, "You bought tickets for $selectedItem", Toast.LENGTH_SHORT).show()
-
-
-
-
-
+            var gotobuy = Intent(this, BuyActivity::class.java)
+            startActivity(gotobuy)
         }
         btnSellTickets.setOnClickListener {
-            // TODO: Implement logic for selling tickets
-
-
-
-            // Get the selected event from the list view
-                val selectedItem = list_events.selectedItem as? String
-                if (selectedItem == null) {
-                    Toast.makeText(this, "Please select an event to sell tickets for", Toast.LENGTH_SHORT).show()
-                    return@setOnClickListener
-                }
-
-                // TODO: Implement logic for selling tickets for the selected event
-                Toast.makeText(this, "You sold tickets for $selectedItem", Toast.LENGTH_SHORT).show()
-
-
-
+            var gotosell = Intent(this, SellActivity::class.java)
+            startActivity(gotosell)
 
         }
 
@@ -77,7 +47,14 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, EventDetailsActivity::class.java)
             intent.putExtra("event_name", selectedEvent)
             startActivity(intent)
+
+
+
         }
 
     }
+
+
 }
+
+
